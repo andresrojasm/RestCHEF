@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:weightSum="1"
+        android:layout_centerInParent="true"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/signIN"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="signIn"/>
+
+        <Button
+            android:id="@+id/createUser"
+            android:text="Create account"
+            android:textAllCaps="true"
+            android:textSize="18dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="signUp"/>
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@drawable/signinlinkedin"
+            android:id="@+id/LinkedButton"
+            android:scaleType="fitXY"
+            android:backgroundTint="#FFFFFF"
+            android:onClick="signInLinkedin"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
